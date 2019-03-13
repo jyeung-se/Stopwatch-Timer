@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.Timer {
+  background-color: #DCDCDC;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #505CFB;
+  width: 300px;
+  border: 25px solid #49CE21;
+  border-radius: 25px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  // following to center on screen
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: nowrap;
+}
+
+.DigitalClock {
+  background-color: #FEFE70;
+  border-radius: 50px;
+  width: 50%;
+  margin: auto;
+  &:active {
+    transform: scale(1.5);
+  }
+}
+
+.SplitList_header {
+  color: black;
+  text-decoration: underline;
+  // display: flex;
+}
+
+.SplitList_list {
+  background-color: lightblue;
+  border: 5px solid purple;
+  position: relative;
+  display: block;
+}
+
+.SplitTime_time {
+  color: red;
+  padding: 0;
+}
+
+.ResetButton {
+	padding: 5px;
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+	font-size: 15px;
+  font-weight: bold;
+	background-color: #C2ACEC;
+	position: relative;
+	border: 3px black;
+  border-style: dashed;
+  &:hover {
+    color: #236F7B;
+    background-color: #FE8D70
+  }
+}
